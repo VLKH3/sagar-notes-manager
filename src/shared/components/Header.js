@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import FancyButton from '../../FancyButton'
-import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function Header() {
     return (
@@ -31,7 +30,23 @@ export default function Header() {
                 <FancyButton>Privacy</FancyButton>
             </Link>
 
-            <LogoutIcon/>
+            <Link to={'/random-user'}>
+                <FancyButton>Random User</FancyButton>
+            </Link>
+
+            <Link to={'/add-song'}>
+                <FancyButton>Add Song</FancyButton>
+            </Link>
+
+            <Link to={'/songs-list'}>
+                <FancyButton>Song List</FancyButton>
+            </Link>
+
+            <Link to={'/jokes'}>
+                <FancyButton>Jokes</FancyButton>
+            </Link>
+
+            
         </div>
     )
 }
